@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: 
+        url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: 
+        url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: 
+        url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif, Arial;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PlayfairDisplay', Georgia, 'Times New Roman';
+}
+
+p {
+    font-size: 2rem;
+}
+
+::selection { 
+    background: #B6DBE5; 
+}
+::-moz-selection { 
+    background: #B6DBE5; 
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.js-blue-text {
+    color: #B6DBE5;
+}
+
+.js-btn-link {
+    color: #6BB0C0;
+    font-weight: 700;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.js-btn-link {
+    position: relative;
+    text-decoration: none;
+    color: #6BB0C0;
+    font-weight: 700;
+    font-size: 1.5rem;
+} 
+.js-btn-link:hover {
+    color: #6BB0C0;
+    text-decoration: none;
+}
+.js-btn-link:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6BB0C0;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.js-btn-link:hover:before {
+    transform: scaleX(1);
+}
+.js-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 2rem;
+}
+.js-logo img {
+    height: 50px;
+}
+
+.js-ritz-logo {
+    position: absolute; 
+    height: 100%; 
+    top: 0; 
+    right: 0; 
+    margin-top: 4rem; 
+    margin-right: -1rem;
+}
+
+.js-top-row {
+    height: 50vh;
+}
+.js-bottom-row {
+    min-height: 50vh; 
+    background-color: #F6F6F6;
+}
+.js-left-card {
+    padding: 5rem 7rem; 
+    background-color: #fff; 
+    box-shadow: 6px 0 4px -2px rgba(0, 0, 0, .1); 
+    z-index: 8888;
+}
+.js-middle-card {
+    min-height: 100%; 
+    background-color: #B6DBE5; 
+    padding: 5rem;
+    overflow: hidden;
+}
+.js-middle-card p {
+    z-index: 7777;
+}
+.js-right-card {
+    min-height: 100%; 
+    padding: 5rem; 
+    background-color: #fff;
+    text-align: right;
+}
+
+.js-hero-text {
+    font-size: 8rem;
+    margin-bottom: 4rem;
+}
+.js-hero-text:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 5rem;
+    margin-left: -13.5rem;
+}
+.js-subhero-text {
+    font-family: 'Montserrat', 'sans-serif', 'Arial';
+    font-size: 3rem;
+}
+
+.js-timeline {
+    margin-top: 11rem;
+}
+.js-timeline:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 50px;
+    margin-top: -2rem;
+    right: 0;
+    margin-right: auto;
+    left: 50%;
+    margin-left: -8px;
+}
+.js-timeline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    top: 0;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+.js-timeline-heading {
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.js-timeline-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.js-timeline-icon {
+    position: absolute;
+    top: 0;
+    margin-top: -11rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px; 
+}
+
+/*-----------------------------------------------*/
+/* Mobile responsive */
+
+@media screen and (max-width: 1500px) {
+    html {
+        font-size: 85%;
+    }
+
+    .js-hero-text:before {
+        margin-left: -16rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+
+    .js-logo {
+        display: none;
+    }
+
+    .js-ritz-logo {
+        height: 110%;
+        top: 0; 
+        right: 0; 
+        left: 0;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .js-top-row {
+        height: initial;
+    }
+    .js-middle-card {
+        text-align: center;
+    }
+    .js-left-card {
+        padding: 8rem;
+        text-align: center;
+    }
+    .js-right-card {
+        text-align: center;
+    }
+
+    .js-hero-text:before {
+        display: none;
+    }
+
+    .js-timeline-heading {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .js-timeline-text {
+        font-size: 2rem;
+    }
+    .js-timeline-icon {
+        margin-top: -13rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .js-top-row {
+        border: none;
+    }
+
+    .js-bottom-card {
+        padding-top: 4rem;
+    }
+
+    .js-timeline {
+        margin-bottom: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+   
+}
+
+/*-----------------------------------------------*/
+/* Smooth transitions */
+
+.js-hero-text,
+.js-subhero-text {
+	visibility: hidden;
+}
+
+.js-slide-down {
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(70%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(70%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
