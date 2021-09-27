@@ -57,13 +57,6 @@ p {
 }
 
 .js-btn-link {
-    color: #6BB0C0;
-    font-weight: 700;
-    padding: 0;
-    font-size: 1.5rem;
-}
-
-.js-btn-link {
     position: relative;
     text-decoration: none;
     color: #6BB0C0;
@@ -122,6 +115,9 @@ p {
     background-color: #fff; 
     box-shadow: 6px 0 4px -2px rgba(0, 0, 0, .1); 
     z-index: 8888;
+    background-image: url('../images/marble-bg.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 .js-middle-card {
     min-height: 100%; 
